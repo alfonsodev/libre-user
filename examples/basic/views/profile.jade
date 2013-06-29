@@ -1,0 +1,11 @@
+!!! 5
+html
+  head
+    title libre user demo app
+  body
+    h1 User profilel
+    a(href="/auth/google") Sign In with Google
+    a(href="/logout") logout
+    if user
+      h1 hello! #{user.displayName}
+      h1 hola #{user.id}

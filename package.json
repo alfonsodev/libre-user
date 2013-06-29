@@ -1,0 +1,29 @@
+{
+  "name": "libre-user",
+  "version": "0.0.0",
+  "description": "User module for express, it handles: registration process, login, logout and profile.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alfonsodev/libre-user.git"
+  },
+  "dependencies": {
+    "passport": "*",
+    "express": "~3.0.4",
+    "passport-google-oauth": "",
+    "debug": "*"
+  },
+  "keywords": [
+    "user",
+    "express",
+    "login",
+    "auth",
+    "authentication"
+  ],
+  "author": "@alfonsodev",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
