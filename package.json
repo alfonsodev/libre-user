@@ -11,10 +11,15 @@
     "url": "https://github.com/alfonsodev/libre-user.git"
   },
   "dependencies": {
-    "passport": "*",
     "express": "~3.0.4",
-    "passport-google-oauth": "",
-    "debug": "*"
+    "passport": "*",
+    "passport-google-oauth": ""
+  },
+  "devDependencies": {
+    "debug": "*",
+    "jshint": "*",
+    "mocha": "*",
+    "js-beautify": "*"
   },
   "keywords": [
     "user",
