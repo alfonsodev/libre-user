@@ -12,6 +12,14 @@ app.use(express.methodOverride());
 app.use(express.session({ secret: 'keyboard cat' }));
 
 app.use(libreUser.init());
+
+debug('route / registering');
+
+app.get('/', function(req, res) {
+  debug('got /');
+  res.render('index', { user: req.user });
+});
+
 app.get('/profile', libreUser.ensureAuthenticated, function(req, res){
 			res.render('profile', { user: req.user });
 		});

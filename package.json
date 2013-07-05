@@ -19,6 +19,9 @@
     "debug": "*",
     "jshint": "*",
     "mocha": "*",
+    "mocha-lcov-reporter": "*",
+    "should": "*",
+    "coveralls": "*",
     "js-beautify": "*"
   },
   "keywords": [
