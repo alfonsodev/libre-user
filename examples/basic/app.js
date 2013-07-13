@@ -1,5 +1,6 @@
 var express = require('express');
-var libreUser = require('../../lib/libre-user');
+var LibreUser = require('../../lib/libre-user');
+var libreUser = new LibreUser();
 var app = express();
 var debug = require('debug')('libre-user');
 
@@ -11,7 +12,7 @@ app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(express.session({ secret: 'keyboard cat' }));
 
-app.use(libreUser.init());
+app.use(libreUser.middleware());
 
 debug('route / registering');
 

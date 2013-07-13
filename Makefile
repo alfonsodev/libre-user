@@ -3,7 +3,7 @@ REPORTER = dot
 
 check: test
 
-test: test-unit
+test: test-unit 
 test-debug: test-unit-debug
 test-unit:
 		@NODE_ENV=test ./node_modules/.bin/mocha \

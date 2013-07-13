@@ -24,6 +24,9 @@
     "coveralls": "*",
     "js-beautify": "*"
   },
+  "peerDependencies": {
+    "express": "3.x"
+  },
   "keywords": [
     "user",
     "express",
