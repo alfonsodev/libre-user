@@ -1,0 +1,63 @@
+<form data-sign-up="" class="form-horizontal form-slim-label ng-pristine ng-valid">
+	<div class="dropdown-form-head-error" data-ng-show="signUpErrors" style="display: none;">
+		<!-- ngRepeat: er in signUpErrors -->
+	</div>
+	<div class="linked-groups">
+		<div class="control-group collapsed-inline">
+			<span class="control-label">Full Name</span>
+			<div class="controls form-inline">
+				<label for="signUpFirst">First Name</label>
+				<input type="text" class="input-small ng-pristine ng-valid" placeholder="First Name" id="signUpFirst" data-ng-model="firstName" autofocus="">
+				<label for="signUpLast">Last Name</label>
+				<input type="text" class="input-small input-last ng-pristine ng-valid" placeholder="Last Name" id="signUpLast" data-ng-model="lastName">
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="signUpEmail">Email</label>
+			<div class="controls">
+				<input type="text" id="signUpEmail" placeholder="Email" data-ng-model="email" class="ng-pristine ng-valid">
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="signUpPass">Password</label>
+			<div class="controls">
+				<input type="password" id="signUpPass" placeholder="Password" data-ng-model="password" class="ng-pristine ng-valid">
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="signUpPassAgain">Re-enter Password</label>
+			<div class="controls">
+				<input type="password" id="signUpPassAgain" placeholder="Password" data-ng-model="passwordConfirm" class="ng-pristine ng-valid">
+			</div>
+		</div>
+
+		<div class="control-group">
+			<span class="control-label"></span>
+			<div class="controls form-inline">
+				<label class="checkbox" for="signUpTOS">
+					<input type="checkbox" id="signUpTOS" data-ng-model="acceptTos" class="ng-pristine ng-valid">I accept the&nbsp;
+				</label><a href="/legal/tos" target="_blank">Terms of Service</a>
+			</div>
+		</div>
+		<div class="control-group">
+			<div class="controls">
+				<button type="submit" data-ng-click="signUp(firstName, lastName, email, password, passwordConfirm, acceptTos, true)" class="btn btn-primary" data-ng-disabled="buttonDisabled">Sign Up</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="hr-with-words">
+		<span>or</span>
+	</div>
+	<div class="soc-login-butts">
+		<button class="soc-login-butt btn" data-ng-click="signUpFacebook()">
+			<img src="/media/img/logos/third_party/facebook-login.png" class="soc-login-icon" alt="Facebook icon">
+			<span class="soc-login-text">Sign up with Facebook</span>
+		</button>
+		<button class="soc-login-butt btn" data-ng-click="signUpGoogle()">
+			<img src="/media/img/logos/third_party/google-login.png" class="soc-login-icon" alt="G+ icon">
+			<span class="soc-login-text">Sign up with Google</span>
+		</button>
+	</div>
+</form>

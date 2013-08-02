@@ -22,8 +22,8 @@ app.get('/', function(req, res) {
 });
 
 app.get('/profile', libreUser.ensureAuthenticated, function(req, res){
-			res.render('profile', { user: req.user });
-		});
+    res.render('profile', { user: req.user });
+});
 
 app.listen(3000);
 debug('listenging ong port 3000');
