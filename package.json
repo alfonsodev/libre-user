@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "express": "~3.0.4",
+    "helmet": "*",
+    "jade": "*",
     "passport": "*",
     "passport-google-oauth": "",
     "aws-sdk": "*",
@@ -19,13 +21,16 @@
     "nano": "*"
   },
   "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
     "debug": "*",
     "jshint": "*",
     "mocha": "*",
     "mocha-lcov-reporter": "*",
     "should": "*",
     "coveralls": "*",
-    "js-beautify": "*"
+    "js-beautify": "*",
+    "grunt-express": "~1.0.0-beta2"
   },
   "peerDependencies": {
     "express": "3.x"
