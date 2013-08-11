@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Libre-user, demo app.</title>
+	</head>
+	<body>
+		<h1>User demo app</h1>
+		<div id="links">
+			<a href="/auth/google">Sign In with Google</a>
+			<a href="/logout">Log out</a>
+		</div>
+        <div id="login-form">
+            <p>Sig in</p>
+            <form action="/login" method="POST" name="signin">
+                <input type="text" name="username" />
+                <input type="password" name="password" placeholder="type your password here" />
+                <input type="submit" name="loginButton" value="login" />
+            </form>
+        </div>
+
+        <div id="create-account">
+            <p>Or create an account</p>
+            <form action="/signup" method="post">
+                Username: <input type="text" name="username"><br>
+                Email: <input type="text" name="email"><br>
+                Password: <input type="password" name="password1"><br>
+                      <input type="submit" value="Submit">
+              </form>
+        </div>
+        
+		{{#user}}
+			<h1>Hello! {{ user.displayName }}</h1>
+			<p> Hi {{ user.id }} </p>
+		{{/user}}
+
+	</body>
+</html>
